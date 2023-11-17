@@ -43,7 +43,7 @@ const Hero = () => {
     <motion.div className="h-screen w-full sticky top-0" ref={ref}>
       <div className="w-screen mx-auto rounded-xl flex justify-center items-center">
         <motion.video
-          src="/homeVideoFinal.mov"
+          src="/HomeVideo.mp4"
           loop
           autoPlay
           muted
