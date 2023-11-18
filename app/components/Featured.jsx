@@ -8,9 +8,9 @@ const Featured = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="bg-white min-h-screen xl:h-[calc(100vh-88px)] sticky top-[88px] xl:top-[88px] Featured py-8">
+    <div className="bg-white min-h-screen xl:h-[calc(100vh-88px)] sticky top-0 xl:top-[30px] Featured py-8">
       <div className="w-full h-full xl:flex xl:flex-row xl:items-center xl:justify-between xl:gap-8 xl:px-6">
-        <div className="xl:h-full w-full xl:border xl:w-[400px] border-black p-6 flex flex-col gap-12 shrink-0 xl:shrink">
+        <div className=" w-full xl:border xl:w-[400px] border-black p-6 flex flex-col gap-12 shrink-0 xl:shrink">
           <h2
             className={`text-2xl sm:text-3xl xl:text-xl text-center ${playfair_display.className}`}
           >

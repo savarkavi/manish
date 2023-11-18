@@ -4,6 +4,9 @@ import Image from "next/image";
 import React from "react";
 import { playfair_display } from "../fonts";
 import Typewriter from "typewriter-effect";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import MyImage from "./MyImage";
 
 const About = () => {
   return (
@@ -36,10 +39,10 @@ const About = () => {
           </p>
         </div>
         <div className="relative w-[300px] xl:w-[500px]  sm:h-[400px] xl:h-[600px] rounded-xl">
-          <Image
+          <LazyLoadImage
             src="/about.jpg"
             alt="about image"
-            fill
+            effect="blur"
             className="object-cover rounded-xl"
           />
         </div>
