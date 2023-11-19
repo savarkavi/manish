@@ -29,23 +29,21 @@ const Slider = ({ setCurrentSlide }) => {
     >
       {imagesData.map((data) => {
         return (
-          <div>
-            <SwiperSlide
-              key={data.alt}
-              className="w-full xl:h-[800px] flex justify-center"
-              id="1"
-            >
-              <div className="relative w-full h-full">
-                <Image
-                  src={imagesLoaded ? data.src : "/loading.png"}
-                  alt={data.alt}
-                  fill
-                  className={`h-[800px] object-contain `}
-                  onLoad={handleImageLoad}
-                />
-              </div>
-            </SwiperSlide>
-          </div>
+          <SwiperSlide
+            key={data.alt}
+            className="w-full xl:h-[800px] flex justify-center"
+            id="1"
+          >
+            <div className="relative w-full h-full">
+              <Image
+                src={imagesLoaded ? data.src : "/loading.png"}
+                alt={data.alt}
+                fill
+                className={`h-[800px] object-contain `}
+                onLoad={handleImageLoad}
+              />
+            </div>
+          </SwiperSlide>
         );
       })}
     </Swiper>
