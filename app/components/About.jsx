@@ -39,10 +39,10 @@ const About = () => {
           </p>
         </div>
         <div className="relative w-[300px] xl:w-[500px]  sm:h-[400px] xl:h-[600px] rounded-xl">
-          <LazyLoadImage
+          <Image
             src="/about.jpg"
             alt="about image"
-            effect="blur"
+            fill
             className="object-cover rounded-xl"
           />
         </div>

@@ -15,7 +15,6 @@ export const imagesData = [
   { src: "/structure3.jpg", alt: "structure3" },
   { src: "/structure4.jpg", alt: "structure4" },
   { src: "/structure5.jpg", alt: "structure5" },
-  { src: "/structure5.jpg", alt: "structure5" },
   { src: "/people1.jpg", alt: "people1" },
   { src: "/people2.jpg", alt: "people2" },
   { src: "/people3.jpg", alt: "people3" },

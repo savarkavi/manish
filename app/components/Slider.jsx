@@ -9,8 +9,15 @@ import Image from "next/image";
 import { imagesData } from "../utils/constants";
 
 const Slider = ({ setCurrentSlide }) => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
   const handleSlideChange = (i) => {
     setCurrentSlide(i);
+  };
+
+  const handleImageLoad = () => {
+    setImagesLoaded(true);
+    console.log(imagesLoaded);
   };
 
   return (
@@ -22,20 +29,23 @@ const Slider = ({ setCurrentSlide }) => {
     >
       {imagesData.map((data) => {
         return (
-          <SwiperSlide
-            key={data.alt}
-            className="w-full xl:h-[800px] flex justify-center"
-            id="1"
-          >
-            <div className="relative w-full h-full">
-              <Image
-                src={data.src}
-                alt={data.alt}
-                fill
-                className={`h-[800px] object-contain `}
-              />
-            </div>
-          </SwiperSlide>
+          <div>
+            <SwiperSlide
+              key={data.alt}
+              className="w-full xl:h-[800px] flex justify-center"
+              id="1"
+            >
+              <div className="relative w-full h-full">
+                <Image
+                  src={imagesLoaded ? data.src : "/loading.png"}
+                  alt={data.alt}
+                  fill
+                  className={`h-[800px] object-contain `}
+                  onLoad={handleImageLoad}
+                />
+              </div>
+            </SwiperSlide>
+          </div>
         );
       })}
     </Swiper>
