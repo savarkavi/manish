@@ -36,10 +36,12 @@ const Slider = ({ setCurrentSlide }) => {
           >
             <div className="relative w-full h-full">
               <Image
-                src={imagesLoaded ? data.src : "/loading.png"}
+                src={data.src}
                 alt={data.alt}
                 fill
-                className={`h-[800px] object-contain `}
+                className={`h-[800px] object-contain ${
+                  imagesLoaded ? "" : "blur-md"
+                }`}
                 onLoad={handleImageLoad}
               />
             </div>
