@@ -29,6 +29,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-lazy-load-image-component": "^1.6.0",
+    "react-loader-spinner": "^5.4.5",
     "react-responsive-carousel": "^3.2.23",
     "sharp": "^0.32.6",
     "sonner": "^1.2.0",

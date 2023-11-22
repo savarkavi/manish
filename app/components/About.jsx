@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { playfair_display } from "../fonts";
 import Typewriter from "typewriter-effect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -9,6 +9,12 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import MyImage from "./MyImage";
 
 const About = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoading = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div className="xl:py-8 h-screen bg-stone-950 sticky top-[0]">
       <div className="flex flex-col xl:flex-row justify-center gap-20 items-center max-w-[1536px] mx-auto xl:mt-28">
@@ -38,12 +44,19 @@ const About = () => {
             ratione!
           </p>
         </div>
+
         <div className="relative w-[300px] xl:w-[500px]  sm:h-[400px] xl:h-[600px] rounded-xl">
+          {!imageLoaded && (
+            <div className="flex justify-center items-center h-full text-white">
+              Image Loading...
+            </div>
+          )}
           <Image
             src="/about.jpg"
             alt="about image"
             fill
             className="object-cover rounded-xl"
+            onLoad={handleImageLoading}
           />
         </div>
       </div>

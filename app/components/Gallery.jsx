@@ -3,13 +3,6 @@ import Link from "next/link";
 import React from "react";
 import Footer from "./Footer";
 import { kayPhoDu, playfair_display } from "../fonts";
-import { Eye } from "lucide-react";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 const Gallery = () => {
   return (
@@ -24,18 +17,6 @@ const Gallery = () => {
         <div
           className={`${kayPhoDu.className} absolute top-12 left-1/2 -translate-x-1/2  text-2xl text-white`}
         >
-          {/* <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                <Link href="/gallery">
-                  <Eye className="w-8 h-8" />
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>click to see the whole Gallery</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider> */}
           <p
             className={`${playfair_display.className} text-white text-sm 2xl:text-base`}
           >

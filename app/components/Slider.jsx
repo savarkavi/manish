@@ -7,17 +7,23 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { imagesData } from "../utils/constants";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const Slider = ({ setCurrentSlide }) => {
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState(
+    Array(imagesData.length).fill(false)
+  );
 
   const handleSlideChange = (i) => {
     setCurrentSlide(i);
   };
 
-  const handleImageLoad = () => {
-    setImagesLoaded(true);
-    console.log(imagesLoaded);
+  const handleImageLoad = (index) => {
+    setImagesLoaded((prev) => {
+      const newLoaded = [...prev];
+      newLoaded[index] = true;
+      return newLoaded;
+    });
   };
 
   return (
@@ -27,22 +33,25 @@ const Slider = ({ setCurrentSlide }) => {
       navigation={true}
       onSlideChange={(current) => handleSlideChange(current.activeIndex)}
     >
-      {imagesData.map((data) => {
+      {imagesData.map((data, i) => {
         return (
           <SwiperSlide
             key={data.alt}
             className="w-full xl:h-[800px] flex justify-center"
             id="1"
           >
+            {!imagesLoaded[i] && (
+              <div className="flex justify-center items-center h-full">
+                Loading...
+              </div>
+            )}
             <div className="relative w-full h-full">
               <Image
                 src={data.src}
                 alt={data.alt}
                 fill
-                className={`h-[800px] object-contain ${
-                  imagesLoaded ? "" : "blur-md"
-                }`}
-                onLoad={handleImageLoad}
+                className={`h-[800px] object-contain`}
+                onLoad={() => handleImageLoad(i)}
               />
             </div>
           </SwiperSlide>
