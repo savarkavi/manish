@@ -24,6 +24,7 @@ const Slider = ({ setCurrentSlide }) => {
       newLoaded[index] = true;
       return newLoaded;
     });
+    console.log("loaded");
   };
 
   return (
@@ -38,14 +39,14 @@ const Slider = ({ setCurrentSlide }) => {
           <SwiperSlide
             key={data.alt}
             className="w-full xl:h-[800px] flex justify-center"
-            id="1"
+            id={i}
           >
-            {!imagesLoaded[i] && (
-              <div className="flex justify-center items-center h-full">
-                Loading...
-              </div>
-            )}
             <div className="relative w-full h-full">
+              {!imagesLoaded[i] && (
+                <div className="flex justify-center items-center h-full">
+                  Loading...
+                </div>
+              )}
               <Image
                 src={data.src}
                 alt={data.alt}

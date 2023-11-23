@@ -41,13 +41,13 @@ const Hero = () => {
 
   return (
     <motion.div className="h-screen w-full sticky top-0" ref={ref}>
-      <div className="w-screen mx-auto rounded-xl flex justify-center items-center">
+      <div className="w-screen rounded-xl flex justify-center items-center overflow-x-hidden">
         <motion.video
           src="/HomeVideo.mp4"
           loop
           autoPlay
           muted
-          className="w-screen h-screen object-cover"
+          className="w-screen h-screen"
         />
       </div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-center">

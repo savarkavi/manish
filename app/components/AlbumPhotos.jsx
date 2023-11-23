@@ -68,7 +68,7 @@ const AlbumPhotos = ({ urls }) => {
           modules={[Mousewheel, Pagination]}
           className="h-[calc(100vh-50px)] w-screen flex justify-center items-center"
         >
-          {urls.map((url) => {
+          {urls.map((url, i) => {
             return (
               <SwiperSlide>
                 <div className="relative h-full w-full flex justify-center items-center">
