@@ -47,7 +47,7 @@ const Hero = () => {
           loop
           autoPlay
           muted
-          className="w-screen h-screen"
+          className="w-screen h-screen object-cover"
         />
       </div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-center">

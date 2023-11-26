@@ -32,16 +32,25 @@ const About = () => {
             />
           </div>
           <p className="text-xs xl:text-sm font-sans">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            illo consectetur distinctio nobis dolorem dicta vero sequi? Adipisci
-            molestiae ipsa iure dolorum alias. Numquam sapiente aliquid culpa
-            ullam! Consequuntur neque a velit quis laudantium, cupiditate
-            molestiae deleniti praesentium? Voluptatem veniam ullam maxime
-            voluptatibus nemo tenetur? Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Debitis voluptatem, laborum deleniti fugit,
-            similique dolorum earum eum possimus, magni velit repellendus
-            temporibus perferendis nostrum ipsa. Eum, dolorum eaque? Nostrum,
-            ratione!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            veritatis sint, repellat vero recusandae aspernatur ducimus minima
+            expedita quos necessitatibus laborum facilis eius unde provident
+            velit quod, itaque vitae? Nesciunt quod ducimus blanditiis. A odio
+            quia incidunt, cumque minus voluptatum non ut doloribus nemo
+            recusandae.
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            beatae perferendis odio earum neque. Odio ut, beatae voluptatibus
+            asperiores, fuga ab totam doloribus sapiente incidunt iste
+            voluptates rem provident dolore.
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            repellendus alias accusantium incidunt repudiandae vero? Earum
+            distinctio ipsum necessitatibus harum minus non labore placeat.
+            Accusantium repellat voluptate unde autem voluptatum! Quaerat illum
+            neque, minima distinctio tenetur unde itaque perferendis culpa!
           </p>
         </div>
 
