@@ -8,7 +8,7 @@ const Album = async () => {
   const urls = result.resources.map((image) => image.url);
 
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full min-h-screen relative overflow-x-hidden">
       <AlbumAnimation urls={urls} />
     </div>
   );

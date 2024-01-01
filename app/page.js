@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        className="min-h-screen w-screen bg-stone-950 relative"
+        className="min-h-screen bg-stone-950 relative flex flex-col"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}

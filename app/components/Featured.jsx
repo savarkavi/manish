@@ -8,7 +8,7 @@ const Featured = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="bg-white min-h-screen xl:h-[calc(100vh-88px)] sticky top-0 xl:top-[30px] Featured py-8">
+    <div className="bg-white min-h-screen xl:h-[calc(100vh-88px)] sticky top-0 xl:top-[45px] Featured py-8">
       <div className="w-full h-full xl:flex xl:flex-row xl:items-center xl:justify-between xl:gap-8 xl:px-6">
         <div className=" w-full xl:border xl:w-[400px] border-black p-6 flex flex-col gap-12 shrink-0 xl:shrink">
           <h2

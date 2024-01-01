@@ -23,25 +23,12 @@ const Hero = () => {
 
   const ref = useRef();
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  const yName = useTransform(
-    scrollYProgress,
-    [0, 0.5, 1],
-    isMobile ? [0, 0, 0] : ["0%", "350%", "350%"]
-  );
-  const yPara = useTransform(
-    scrollYProgress,
-    [0, 1],
-    isMobile ? [0, 0] : [0, 400]
-  );
-
   return (
-    <motion.div className="h-screen w-full sticky top-0" ref={ref}>
-      <div className="w-screen rounded-xl flex justify-center items-center overflow-x-hidden">
+    <motion.div
+      className="h-screen w-full sticky top-0 overflow-x-hidden"
+      ref={ref}
+    >
+      <div className="w-screen rounded-xl">
         <motion.video
           src="/HomeVideo.mp4"
           loop

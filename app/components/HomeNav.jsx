@@ -68,7 +68,7 @@ const HomeNav = () => {
 
   return (
     <div
-      className={`p-8 fixed top-0 w-full ${
+      className={`p-8 fixed left-0 top-0 w-full ${
         navWhite ? "bg-white" : ""
       }  z-[999] transition-all`}
       ref={navRef}
