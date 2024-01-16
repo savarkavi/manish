@@ -22,9 +22,9 @@ const Featured = () => {
                 Night City Ambience:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                Capturing the pulsating heartbeat of urban life beneath the
+                moonlit sky, this collection breathes life into the city's
+                nocturnal rhythm.
               </span>
             </div>
             <div
@@ -37,9 +37,8 @@ const Featured = () => {
                 Structures, Space & Symmetry:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                Delve into the architectural poetry of lines and angles, where
+                the dance of structures meets the vastness of space.
               </span>
             </div>
             <div
@@ -51,9 +50,10 @@ const Featured = () => {
                 Slice of Life:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                In the ordinary, the extraordinary unfolds. These snapshots of
+                everyday moments narrate the stories hidden in the mundane—a
+                stolen glance, a fleeting expression, a candid fragment of
+                life's rich tapestry.
               </span>
             </div>
             <div
@@ -65,9 +65,8 @@ const Featured = () => {
                 On Nature's End:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                From the serene landscapes to the untethered wilderness, this
+                collection encapsulates the raw, unfiltered essence of nature.
               </span>
             </div>
             <div
@@ -79,9 +78,8 @@ const Featured = () => {
                 Black & White:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                Stripped of color, these monochromatic compositions distill the
+                essence of emotion and form.
               </span>
             </div>
           </div>
@@ -97,9 +95,9 @@ const Featured = () => {
                 Night City Ambience:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                Capturing the pulsating heartbeat of urban life beneath the
+                moonlit sky, this collection breathes life into the city's
+                nocturnal rhythm.
               </span>
             </li>
             <li
@@ -115,9 +113,8 @@ const Featured = () => {
                 Structures, Space & Symmetry:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                Delve into the architectural poetry of lines and angles, where
+                the dance of structures meets the vastness of space.
               </span>
             </li>
             <li
@@ -133,9 +130,10 @@ const Featured = () => {
                 Slice of Life:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                In the ordinary, the extraordinary unfolds. These snapshots of
+                everyday moments narrate the stories hidden in the mundane—a
+                stolen glance, a fleeting expression, a candid fragment of
+                life's rich tapestry.
               </span>
             </li>
             <li
@@ -151,9 +149,8 @@ const Featured = () => {
                 On Nature's End:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                From the serene landscapes to the untethered wilderness, this
+                collection encapsulates the raw, unfiltered essence of nature.
               </span>
             </li>
             <li
@@ -169,9 +166,8 @@ const Featured = () => {
                 Black & White:
               </span>{" "}
               <span className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                quia totam sed, aut in veniam vel. Minima incidunt praesentium
-                beatae?
+                Stripped of color, these monochromatic compositions distill the
+                essence of emotion and form.
               </span>
             </li>{" "}
           </ul>
